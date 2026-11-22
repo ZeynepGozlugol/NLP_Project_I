@@ -1,0 +1,3 @@
+﻿model,variant,acc_conf>=0.7_%,n_high,acc_conf<0.7_%,n_low
+llama3.2:3b,few_shot_v1,86.8,190,53.6,110
+qwen2.5:7b,few_shot_v2,93.2,190,59.1,110

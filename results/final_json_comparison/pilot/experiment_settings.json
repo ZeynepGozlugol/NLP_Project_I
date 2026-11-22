@@ -1,0 +1,16 @@
+{
+  "model": "qwen2.5:7b",
+  "model_quantization": "Q4_K_M",
+  "ollama_version": "0.40.16",
+  "prompt_variant": "few_shot_v2",
+  "modes": [
+    "none",
+    "schema"
+  ],
+  "temperature": 0.0,
+  "seed": 42,
+  "sample_seed": 2026,
+  "context_length": 4096,
+  "n_samples": 6,
+  "n_per_class": 2
+}

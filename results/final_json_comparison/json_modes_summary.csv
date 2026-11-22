@@ -1,0 +1,3 @@
+﻿mode,n,accuracy_%,macro_f1_%,raw_json_%,parse_success_%,schema_valid_%,median_latency_s
+none,6,100.0,100.0,100.0,100.0,100.0,1.7584139584996592
+schema,6,100.0,100.0,100.0,100.0,100.0,1.6925761040001817

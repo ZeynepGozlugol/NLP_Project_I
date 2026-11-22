@@ -1,0 +1,136 @@
+============================================================
+1. GENEL BAKIŞ
+============================================================
+Ham satır sayısı        : 14640
+Tekrarlar silindikten sonra: 14427  (silinen: 213)
+
+Eksik değerler (temiz veri):
+text                               0
+true_label                         0
+airline                            0
+negativereason                  5347
+airline_sentiment_confidence       0
+
+Not: negativereason yalnızca negatif tweetlerde dolu olmalı, diğerlerinde NaN normal.
+
+============================================================
+2. SENTIMENT DAĞILIMI (sınıf dengesizliği)
+============================================================
+            adet  yüzde
+true_label             
+negative    9080   62.9
+neutral     3057   21.2
+positive    2290   15.9
+
+============================================================
+3. HAVAYOLU DAĞILIMI ve HAVAYOLUNA GÖRE SENTIMENT
+============================================================
+airline
+United            3805
+US Airways        2906
+American          2594
+Southwest         2408
+Delta             2211
+Virgin America     503
+
+Havayoluna göre sentiment yüzdeleri:
+true_label      negative  neutral  positive
+airline                                    
+American            71.9     16.6      11.5
+Delta               43.2     32.7      24.1
+Southwest           49.2     27.3      23.5
+US Airways          77.8     13.1       9.1
+United              69.2     18.2      12.6
+Virgin America      36.0     34.0      30.0
+
+============================================================
+4. NEGATİF SEBEPLERİ (issues için gold etiket)
+============================================================
+negativereason
+Customer Service Issue         2883
+Late Flight                    1650
+Can't Tell                     1176
+Cancelled Flight                829
+Lost Luggage                    719
+Bad Flight                      575
+Flight Booking Problems         523
+Flight Attendant Complaints     475
+longlines                       177
+Damaged Luggage                  73
+
+Negatif tweet sayısı: 9080 | sebebi 'Can't Tell' veya boş: 1176
+
+============================================================
+5. METİN ÖZELLİKLERİ
+============================================================
+       n_chars  n_words  n_mentions  n_hashtags
+count  14427.0  14427.0     14427.0     14427.0
+mean     103.9     17.7         1.1         0.2
+std       35.8      6.8         0.4         0.7
+min       12.0      2.0         1.0         0.0
+25%       77.0     13.0         1.0         0.0
+50%      115.0     19.0         1.0         0.0
+75%      136.0     23.0         1.0         0.0
+max      182.0     36.0         6.0         8.0
+
+Sınıfa göre ortalamalar:
+            n_chars  n_words  n_mentions  n_hashtags  has_url  has_question
+true_label                                                                 
+negative     113.69    19.69        1.11        0.23     0.05          0.26
+neutral       87.41    14.45        1.17        0.21     0.16          0.39
+positive      87.39    14.27        1.14        0.30     0.10          0.04
+
+============================================================
+6. ETİKET GÜVENİLİRLİĞİ (airline_sentiment_confidence)
+============================================================
+Veri seti insan etiketleyicilerle hazırlanmış; confidence < 1 ise etiketçiler anlaşamamış demektir.
+             mean    min  confidence<0.7 (%)
+true_label                                  
+negative    0.933  0.339                17.8
+neutral     0.823  0.335                47.4
+positive    0.872  0.336                32.9
+-> Neutral sınıfta güven düşükse modelin neutral'da zorlanması kısmen etiket belirsizliğinden gelir.
+
+============================================================
+7. DEV / TEST AYRIMI
+============================================================
+
+DEV: n=150
+true_label
+neutral     50
+negative    50
+positive    50
+Havayolu oranları:
+airline
+United            0.227
+Delta             0.200
+Southwest         0.200
+American          0.187
+US Airways        0.147
+Virgin America    0.040
+
+TEST: n=300
+true_label
+positive    100
+neutral     100
+negative    100
+Havayolu oranları:
+airline
+United            0.253
+Delta             0.220
+Southwest         0.173
+American          0.153
+US Airways        0.150
+Virgin America    0.050
+
+Dev ∩ Test (sızıntı kontrolü, 0 olmalı): 0
+
+============================================================
+8. JSON ŞEMASI <-> VERİ SETİ EŞLEMESİ
+============================================================
+category         -> gold: airline_sentiment       | ölçüm: accuracy, macro-F1
+sentiment_score  -> gold: YOK                     | ölçüm: sınıf ortalamaları (neg~0, neu~0.5, pos~1)
+entities         -> gold: kısmen (airline sütunu) | ölçüm: havayolu bulundu mu + halüsinasyon oranı
+issues           -> gold: negativereason          | ölçüm: gold etiket listede mi (sadece negatifler)
+
+Örnek tweetler kaydedildi: results/eda/ornek_tweetler.csv

@@ -1,0 +1,9 @@
+{
+  "model": "qwen2.5:7b",
+  "selected": "few_shot_v2",
+  "dev_macro_f1": {
+    "zero_shot": 79.67,
+    "few_shot_v1": 84.51,
+    "few_shot_v2": 84.58
+  }
+}

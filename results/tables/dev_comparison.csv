@@ -1,0 +1,7 @@
+﻿model,variant,chosen,accuracy_%,ci95_±,macro_f1_%,recall_neg,recall_neu,recall_pos
+llama3.2:3b,zero_shot,False,76.67,6.8,76.4,0.7,0.66,0.94
+llama3.2:3b,few_shot_v1,True,81.33,6.2,80.58,0.94,0.6,0.9
+llama3.2:3b,few_shot_v2,False,78.67,6.6,78.04,0.96,0.58,0.82
+qwen2.5:7b,zero_shot,False,80.0,6.4,79.67,0.78,0.68,0.94
+qwen2.5:7b,few_shot_v1,False,84.67,5.8,84.51,0.88,0.74,0.92
+qwen2.5:7b,few_shot_v2,True,84.67,5.8,84.58,0.88,0.76,0.9

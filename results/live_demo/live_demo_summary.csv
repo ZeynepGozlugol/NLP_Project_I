@@ -1,0 +1,5 @@
+﻿mode,temperature,samples,correct_predictions,raw_json_rate,parse_rate,schema_rate,accuracy_%
+none,0.0,5,5,100.0,100.0,100.0,100.0
+none,1.0,5,5,100.0,100.0,100.0,100.0
+schema,0.0,5,5,100.0,100.0,100.0,100.0
+schema,1.0,5,5,100.0,100.0,100.0,100.0

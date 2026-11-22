@@ -1,0 +1,11 @@
+﻿model,split,variant,n,raw_parse_%,parse_after_cleaning_%,schema_valid_first_try_%,final_after_retry_%,retries_used,median_latency_s
+llama3.2:3b,dev,zero_shot,150,100.0,100.0,100.0,100.0,0,1.11
+llama3.2:3b,test,zero_shot,300,100.0,100.0,99.67,99.67,1,1.17
+llama3.2:3b,dev,few_shot_v1,150,100.0,100.0,100.0,100.0,0,1.98
+llama3.2:3b,test,few_shot_v1,300,100.0,100.0,100.0,100.0,0,1.97
+llama3.2:3b,dev,few_shot_v2,150,100.0,100.0,100.0,100.0,0,1.91
+qwen2.5:7b,dev,zero_shot,150,100.0,100.0,100.0,100.0,0,2.28
+qwen2.5:7b,test,zero_shot,300,100.0,100.0,100.0,100.0,0,1.71
+qwen2.5:7b,dev,few_shot_v1,150,100.0,100.0,100.0,100.0,0,2.39
+qwen2.5:7b,dev,few_shot_v2,150,100.0,100.0,100.0,100.0,0,2.38
+qwen2.5:7b,test,few_shot_v2,300,100.0,100.0,100.0,100.0,0,1.71

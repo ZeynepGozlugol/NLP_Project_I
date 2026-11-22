@@ -1,0 +1,30 @@
+# Python and environments
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# IDE / system files
+.idea/
+.vscode/
+.DS_Store
+__MACOSX/
+
+# Large or local datasets (keep final evaluation CSVs under results/)
+data/*.csv
+
+# Models, local secrets and logs
+*.gguf
+*.safetensors
+*.pth
+*.pt
+.env
+.env.*
+*.log
+
+# Optional scratch files
+results/**/gold_entities_empty_backup.csv
+results/**/gold_entities_previous.csv

@@ -1,0 +1,5 @@
+﻿model,variant,chosen,accuracy_%,ci95_±,macro_f1_%,recall_neg,recall_neu,recall_pos
+llama3.2:3b,zero_shot,False,77.0,4.8,76.82,0.8,0.59,0.93
+llama3.2:3b,few_shot_v1,True,74.67,4.9,72.6,0.91,0.42,0.91
+qwen2.5:7b,zero_shot,False,80.0,4.5,79.79,0.82,0.68,0.9
+qwen2.5:7b,few_shot_v2,True,80.67,4.5,80.43,0.89,0.68,0.85

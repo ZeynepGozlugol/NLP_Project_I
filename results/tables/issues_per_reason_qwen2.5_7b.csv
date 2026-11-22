@@ -1,0 +1,9 @@
+negativereason,hit_rate,n
+Bad Flight,0.2,5
+Cancelled Flight,0.91,11
+Customer Service Issue,0.67,39
+Flight Attendant Complaints,0.0,3
+Flight Booking Problems,0.6,5
+Late Flight,0.64,14
+Lost Luggage,0.83,6
+longlines,0.0,4

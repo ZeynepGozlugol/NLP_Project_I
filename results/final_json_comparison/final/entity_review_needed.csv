@@ -1,0 +1,15 @@
+﻿sample_id,tweet,entity_text,entity_type,reason
+18,@united 1632 was phenomenal frm gate (SEA) to gate (IAD),1632,flight_number,Check flight number boundaries
+32,@united LE2V9D pnr numbered flight. The first leg is Cancelled Flightled due to bad weather in iatanbul. How can i make a reFlight Booking Problems,LE2V9D,other,Check whether this is a named entity
+35,"@united flight ua3576, gate b1. And tell ray I somehow made it on to the 736 flight out of IAH and didn't have to wait for the 917 one. :)",b1,other,Check whether this is a named entity
+35,"@united flight ua3576, gate b1. And tell ray I somehow made it on to the 736 flight out of IAH and didn't have to wait for the 917 one. :)",736 flight,flight_number,Check flight number boundaries
+35,"@united flight ua3576, gate b1. And tell ray I somehow made it on to the 736 flight out of IAH and didn't have to wait for the 917 one. :)",917 one,flight_number,Check flight number boundaries
+39,@SouthwestAir tv stream means I get to spend my flight watching 1999 and 2011 Women's World Cup Finals. #throwback #bestflightever,Women's World Cup Finals,other,Check whether this is a named entity
+41,@SouthwestAir here is my conf #F8NEQM. My flight was delayed for 3 hours while my friend waited for me on her bday. Please follow up.,#F8NEQM,other,Check whether this is a named entity
+53,"@united sorry for the delayed response. It was UA #381 Chicago to San Fran. Held up for almost an hour on the Tarmac. Also, lost my bags",UA #381,flight_number,Check flight number boundaries
+54,"@AmericanAir Chicago seen from seat 6A, AA 1620. So far a great ride! On to PDX! http://t.co/X4rsvAGIjN",AA 1620,flight_number,Check flight number boundaries
+82,"Despite Mother Nature's best efforts, @SouthwestAir's good-humored folks got us home safely in an area heavily affected by winter storms.",Mother Nature,other,Check whether this is a named entity
+88,@JetBlue @Leopolds_IC  No but my friend in the picture - Phillip Heller (JFK IFC) did and he said it was delicious!,@Leopolds_IC,other,Check whether this is a named entity
+91,@AmericanAir  my fly is 1579  if do you have some news,1579,flight_number,Check flight number boundaries
+102,@USAirways 5203 and we're just sitting 20 feet from an open gate,5203,flight_number,Check flight number boundaries
+118,@united Finally I get the right response. United must check this issue. UA 1514 EWR to PUJ on Friday 02/20/15.,UA 1514,flight_number,Check flight number boundaries

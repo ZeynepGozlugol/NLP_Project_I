@@ -1,0 +1,7 @@
+﻿text,true_label,airline,negativereason,airline_sentiment_confidence,sample_id
+"@AmericanAir if business class if full but 1st class empty, do you guys upgrade EXP members to 1st?",neutral,American,,0.6767,0
+@AmericanAir thank you so much that helps a lot.,positive,American,,1.0,1
+"@SouthwestAir Beautiful, thanks a ton!",positive,Southwest,,1.0,2
+"@united You need to change the way customer service is handled! I have been waiting for a supervisor to contact me for 17 days, what gives?",negative,United,Customer Service Issue,1.0,3
+@united at the gate! IAD to RDU,neutral,United,,1.0,4
+"@JetBlue if there is a ""processing error"" the  why do you send out full flight tickets and confirmations? #FlySouthwest",negative,Delta,Flight Booking Problems,0.6990000000000001,5

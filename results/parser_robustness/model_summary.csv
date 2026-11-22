@@ -1,0 +1,7 @@
+model,mode,sample_count,parse_success_rate,schema_valid_rate,median_latency
+llama3.2:3b,json,6,100.0,100.0,0.7637269496917725
+llama3.2:3b,none,6,100.0,100.0,0.8164160251617432
+llama3.2:3b,schema,6,100.0,100.0,0.7608569860458374
+qwen2.5:7b,json,6,100.0,100.0,1.5506409406661987
+qwen2.5:7b,none,6,100.0,100.0,1.66538405418396
+qwen2.5:7b,schema,6,100.0,100.0,1.546186089515686

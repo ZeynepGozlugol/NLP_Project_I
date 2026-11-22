@@ -1,0 +1,3 @@
+﻿model,variant,airline_found_%,airline_typed_%,entities_per_tweet,entity_grounded_%,issue_gold_hit_%,issue_false_alarm_%
+llama3.2:3b,few_shot_v1,99.1,99.1,3.23,99.5,71.3,17.0
+qwen2.5:7b,few_shot_v2,99.6,99.6,1.45,99.8,62.1,12.0
